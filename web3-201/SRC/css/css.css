@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+#todo{
+	padding: 10px;
+	width: 90%;
+	margin: auto;
+}
+.encabezado{
+	background-color: green;
+	padding: 20px 10px;
+}
+.encabezado h1{
+	font-family: 'Prata', serif;
+	color: white;
+	font-size: 38px;
+}
+h2{
+	font-family: 'Prata', serif;
+}
+.ladoIzquierdo{
+	padding: 10px;
+	width: 50%;
+	background-color: pink;
+	display: inline-block;
+}
+.ladoDerecho{
+float: right;
+width: 50%;
+padding: 10px;
+background-color: red;
+}
+.footer{
+clear: both;
+
+display: block;
+
+}
+.categoria{
+float:left;
+position: relative;
+background-color: blue;
+padding: 10px;
+width: 25%;
+text-align: center;
+}
+.footer .categoria  ul {
+	list-style: none;
+}
+.footer .categoria ul li a{
+	text-decoration: none;
+	color:white;
+}
+.cuerpo{
+	padding: 10px 0;
+}
+.cuerpo video {
+	width: 100%;
+}
+.comentario1{
+	text-align: justify;
+	padding: 10px;
+	position: relative;
+}
+.comentario1::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	padding: 1px;
+	left: 0;
+	display: flex;
+	background-color: black;
+}
+.comentario2{
+	text-align: justify;
+	padding: 10px;
+	position: relative;
+}
+p{
+	font-family: 'Sanchez', serif;
+}

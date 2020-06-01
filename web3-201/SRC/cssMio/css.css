@@ -1,0 +1,188 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+#todo{
+	padding: 10px;
+	width: 90%;
+	margin: auto;
+}
+
+/*         Encabezado          */
+.encabezado{
+	width: 100%;
+	background-color: green;
+	padding: 10px;
+}
+form{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+form h1{
+	width: 75%;
+	font-family: 'Prata', serif;
+	color: #fff;
+	float: left;
+}
+form fieldset{
+	width: 25%;
+	padding: 10px;
+	line-height:20px;
+	background-color: #fff;
+	border:1px solid white;
+	border-radius: 20px;
+}
+form fieldset input{
+	color:#666;
+	border:none;
+	padding: 5px;
+	width: 70%;
+}
+form fieldset button{
+	font-size: 20px;
+	color:#666;
+	border:none;
+	background-color: #fff;
+}
+.fas {
+	padding: 0 10px 0 0 ;
+}
+/*       fin Encabezado*/
+
+/*                    Cuerpo                 */
+
+.cuerpo{
+	width: 100%;
+	padding: 10px;
+	display: block;
+}
+.ladoIzquierdo{
+	padding: 10px;
+	width: 60%;
+	display: block;
+	float: left;
+}
+video{
+	width: 100%;
+}
+ h2{
+ 	font-family: 'Sanchez', serif;
+ }
+ .comentarios{
+ 	font-family: 'Sanchez', serif;
+ 	text-align: justify;
+ }
+ .comentario1, .comentario2{
+ 	position: relative;
+ 	padding: 10px 20px;
+ }
+ .comentario1::after{
+ 	content: "";
+ 	width: 100%;
+ 	position: absolute;
+ 	left: 0;
+ 	padding: 1px;
+ 	background-color: #096400;
+ 	display: flex;
+ }
+.comentario2::after{
+	content: "";
+ 	width: 100%;
+ 	position: absolute;
+ 	left: 0;
+ 	padding: 1px;
+ 	background-color: #096400;
+ 	display: flex;
+}
+.ladoDerecho{
+	width: 40%;
+	display: block;
+	float: right;
+	background-color: green;
+}
+.video{
+	display: flex;
+	padding: 10px;
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+h3{
+	font-family: 'Prata', serif;
+	color:#fff;
+	font-weight: bold;
+}
+p{
+	font-family: 'Sanchez', serif;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 20px;
+}
+.contenidoVideo{
+	right: 0;
+	text-align: justify;
+}
+
+.footer{
+	clear: both;
+	display: block;
+	padding: 10px;
+}
+.categoria{
+	padding: 10px;
+	width: 25%;
+	display: inline-block;
+	background-color: #0B5D03 ;
+	float: left;
+}
+.categoria h3{
+	background-color:#074B00 ;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+.categoria ul {
+	list-style: none;
+	padding: 10px;
+}
+.categoria ul li {
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+.categoria ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Sanchez', serif;
+	padding: 10px;
+}
+.categoria .fas{
+	color: white;
+}
+.video a{
+	text-decoration: none;
+}
+/*                  Fin Cuerpo               */
+
+/*          Pantallas menores a 800px*/
+@media screen and (max-width: 800px){
+	.cuerpo{
+		display: block;
+	}
+	.ladoIzquierdo{
+		display: block;
+		width: 100%;
+	}
+	.ladoDerecho{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 500px){
+	.categoria{
+		width: 50%;
+	}
+}
