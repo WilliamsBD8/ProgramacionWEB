@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta autor="William Bonilla">
+	<title>Cliente/Servidor</title>
+
+	<!--  Css -->
+	<link rel="stylesheet" type="text/css" href="css/clienteServidor.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700" rel="stylesheet">
+</head>
+<body>
+	<div id="todo">
+		<div class="titulo">
+			<a href="index.html"><i class="fas fa-home"></i>  Inicio</a>
+			<h1>Arquitectura Cliente/Servidor</h1>
+		</div>
+
+		<div class="navegacion">
+		<h2>Índice</h2>
+			<ul>
+				<li><a href="#Seccion1">¿Qué es una estructura Cliente/Servidor?</a></li>
+				<li><a href="#Section2">Características</a></li>
+				<li><a href="#Section3">La arquitectura C/S con otras arquitecturas de red</a></li>
+				<li><a href="#Section4">Arquitecturas multi-capas</a></li>
+			</ul>
+		</div>
+
+		<div class="queEs">
+			<a name="Seccion1"><h2>¿Qué es una estructura Cliente/Servidor?</h2></a>
+			<p>
+			<img src="img/diagrama-cliente-servidor.jpeg">
+				La <strong>arquitectura cliente-servidor </strong>arquitectura cliente-servidor es un modelo de diseño de software en el que las tareas se reparten entre los proveedores de recursos o servicios, llamados servidores, y los demandantes, llamados clientes. Un cliente realiza peticiones a otro programa, el servidor, quien le da respuesta. Esta idea también se puede aplicar a programas que se ejecutan sobre una sola computadora, aunque es más ventajosa en un sistema operativo multiusuario distribuido a través de una red de computadoras.
+				<br><br>
+				Algunos ejemplos de aplicaciones computacionales que usen el modelo cliente-servidor son el Correo electrónico, un Servidor de impresión y la World Wide Web.
+				<br><br>
+				En esta arquitectura la capacidad de proceso está repartida entre los clientes y los servidores, aunque son más importantes las ventajas de tipo organizativo debidas a la centralización de la gestión de la información y la separación de responsabilidades, lo que facilita y clarifica el diseño del sistema.
+			</p>
+		</div>
+
+		<div class="caracteristicas">
+			<a name="Section2"><h2>Caraterísticas</h2></a>
+			<p>
+				Para la arquitectura C/S el <strong>remitente de una solicitud</strong> es conocido como cliente. Sus características son:
+				<ul>
+					<li>Es quien inicia solicitudes o peticiones, tienen por tanto un papel activo en la comunicación (dispositivo <strong>maestro</strong> o <strong>amo</strong>).</li>
+					<li>Espera y recibe las respuestas del servidor.</li>
+					<li>Por lo general, puede conectarse a varios servidores a la vez.</li>
+					<li>Normalmente interactúa directamente con los usuarios finales mediante una interfaz gráfica de usuario.</li>
+				</ul>
+				Al receptor de la solicitud enviada por el cliente se conoce como servidor. Sus características son:
+				<ul>
+					<li>Al iniciarse esperan a que lleguen las solicitudes de los clientes, desempeñan entonces un papel pasivo en la comunicación (dispositivo <strong>esclavo</strong> ).</li>
+					<li>Tras la recepción de una solicitud, la procesan y luego envían la respuesta al cliente.</li>
+					<li>Por lo general, acepta las conexiones de un gran número de clientes (en ciertos casos el número máximo de peticiones puede estar limitado).</li>
+				</ul>
+				En la arquitectura C/S sus características generales son:
+				<ul>
+					<li>El Cliente y el Servidor pueden actuar como una sola entidad y también pueden actuar como entidades separadas, realizando actividades o tareas independientes.</li>
+					<li>Las funciones de Cliente y Servidor pueden estar en plataformas separadas, o en la misma plataforma.</li>
+					<li>Cada plataforma puede ser escalable independientemente. Los cambios realizados en las plataformas de los Clientes o de los Servidores, ya sean por actualización o por reemplazo tecnológico, se realizan de una manera transparente para el usuario final.</li>
+					<li>La interrelación entre el hardware y el software están basados en una infraestructura poderosa, de tal forma que el acceso a los recursos de la red no muestra la complejidad de los diferentes tipos de formatos de datos y de los protocolos.</li>
+					<li>Su representación típica es un centro de trabajo (PC), en donde el usuario dispone de sus propias aplicaciones de oficina y sus propias bases de datos, sin dependencia directa del sistema central de información de la organización.</li>
+				</ul>
+			</p>
+		</div>
+
+		<div class="comparacion">
+			<a name="Section3"><h2>Comparación de la arquitectura C/S con otras arquitecturas de red</h2></a>
+			<p>
+				<h3>Comparación con las redes de pares:</h3>
+				Las <strong>redes de pares</strong>, también conocidas como redes <strong>par-a-par</strong> o peer-to-peer (abreviado con las siglas <strong>P2P</strong>) son otro tipo de arquitectura de red.
+
+				<h3>Comparación con la arquitectura Cliente-Cola-Cliente</h3>
+				Si bien la clásica arquitectura C/S requiere uno de los puntos terminales de comunicación para actuar como un servidor, que puede ser algo más difícil de aplicar, la arquitectura Cliente-Cola-Cliente habilita a todos los nodos para actuar como clientes simples, mientras que el servidor actúa como una cola que va capturando las peticiones de los clientes (un proceso que debe pasar sus peticiones a otro, lo hace a través de una cola, por ejemplo, una consulta a una base de datos, entonces, el segundo proceso conecta con la base de datos, elabora la petición, la pasa a la base de datos, etc.). Esta arquitectura permite simplificar en gran medida la implementación de software. La arquitectura P2P originalmente se basó en el concepto "Cliente-Cola-Cliente".
+			</p>
+		</div>
+
+		<div class="multiCapa">
+			<a name="Section4"><h2>Arquitecturas multi-capas</h2></a>
+			<p>
+				La arquitectura cliente/servidor genérica tiene dos tipos de nodos en la red: clientes y servidores. Consecuentemente, estas arquitecturas genéricas se refieren a veces como arquitecturas de dos niveles o <strong>dos capas</strong>.
+				<br><br>
+				<h3>Algunas redes disponen de tres tipos de nodos:</h3>
+				<ul>
+					<li>Clientes que interactúan con los usuarios finales.</li>
+					<li>Servidores de aplicación que procesan los datos para los clientes.</li>
+					<li>Servidores de la base de datos que almacenan los datos para los servidores de aplicación.</li>
+				</ul>
+
+				<h3>Esta configuración se llama una arquitectura de tres-capas.</h3>
+				<ul>
+					<li>Ventajas de las arquitecturas n-capas:
+						<br>
+						La ventaja fundamental de una arquitectura n-capas comparado con una arquitectura de dos niveles (o una tres-capas con una de dos niveles) es que separa hacia fuera el proceso, eso ocurre para mejorar el balance la carga en los diversos servidores; es más escalable.
+					</li>
+					<li>
+						Desventajas de las arquitecturas de la n-capas:
+						<ul>
+							<li>Pone más carga en la red, debido a una mayor cantidad de tráfico de la red.</li>
+							<li>Es mucho más difícil programar y probar el software que en arquitectura de dos niveles porque tienen que comunicarse más dispositivos para terminar la transacción de un usuario.</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+		</div>
+
+	</div>
+</body>
+</html>

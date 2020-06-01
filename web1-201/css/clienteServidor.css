@@ -1,0 +1,112 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+#todo{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.titulo{
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+	background: #06B406;
+	font-family: 'Merriweather', serif;
+}
+.titulo a{
+	right: 0;
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	line-height: 50px;
+	margin:  0 5px ;
+}
+h1{
+	margin: 10px;
+	color:white;
+}
+h2{
+	color:#6F0000;
+}
+h3{
+	color:#9A0000;
+}
+.navegacion{
+	width: 100%;
+	position: relative;
+	margin: 10px 0;
+	padding: 10px;
+	font-family: 'Merriweather', serif;
+	color:black;
+	display: block;
+}
+.navegacion h2{
+	text-align: center;
+}
+.navegacion ul {
+	list-style: none;
+}
+.navegacion li a{
+	text-decoration: none;
+	display: inline-flex;
+	color:black;
+	float: left;
+	margin: 5px;
+	padding: 10px;
+	transition: all 500ms ease;
+}
+.navegacion li a:hover{
+	box-shadow: 0 0 15px green;
+}
+.queEs{
+	margin: 10px 0 10px 0;
+	font-family: 'Merriweather', serif;
+	display: block;
+	background-color: #D9FFD9;
+	clear: both;
+	padding: 15px;
+}
+.queEs img{
+	width: 50%;
+	padding: 0 0 0 10px;
+	float: right;
+}
+.caracteristicas{
+	margin: 10px 0 10px 0;
+	padding: 10px;
+	background-color: #D9FFD9;
+	font-family: 'Merriweather', serif;
+}
+.caracteristicas ul{
+	padding: 10px 0 10px 40px ;
+}
+.caracteristicas ul li{
+	padding: 2px ;
+}
+.comparacion{
+	background-color: #D9FFD9;
+	padding: 10px;
+	font-family: 'Merriweather', serif;
+	margin: 10px 0 10px 0;
+}
+.comparacion h2, h3{
+	padding: 5px;
+}
+
+.multiCapa{
+	background-color: #D9FFD9;
+	font-family: 'Merriweather', serif;
+	padding: 10px;
+}
+.multiCapa ul{
+	padding: 0 0 0 30px;
+}
+.multiCapa ul li ul{
+	margin: 5px 0 5px 10px;
+}

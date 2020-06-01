@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+#todo{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.titulo{
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+	background: #06B406;
+	font-family: 'Merriweather', serif;
+}
+.titulo a{
+	right: 0;
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	line-height: 50px;
+	margin:  0 5px ;
+}
+.titulo h1{
+	margin: 10px;
+	color:white;
+}
+
+/*                                    Audios                                   */
+.audio{
+	position: relative;
+	display: flex;
+	top: 10px;
+	width: 95%;
+	margin: auto;
+}
+
+.ogg,.mp3{
+	width: 50%;
+}
+.ogg h2,.mp3 h2, .webm h2, .mp4 h2{
+	border-radius: 25% 25%;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border: 2px solid #17B107;
+	font-family: 'Handlee', cursive;
+}
+.ogg h2, .webm h2{
+	border-right: 0px solid white;
+}
+.mp3 h2, .mp4 h2{
+	border-left: 0 solid white;
+}
+
+.ogg audio, .mp3 audio{
+	width: 100%;
+	margin: auto;
+	position: relative;
+	top: 10px;
+	padding: 0 10px ;
+}
+
+.video{
+	width: 95%;
+	display: flex;
+	position: relative;
+	top: 50px;
+	margin: auto;
+}
+.webm,.mp4{
+	width: 50%;
+}
+.webm video, .mp4 video{
+	width: 100%;
+	padding: 0 10px;
+}

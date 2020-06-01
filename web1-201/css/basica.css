@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+#todo{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.titulo{
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+	background: #06B406;
+	font-family: 'Merriweather', serif;
+}
+.titulo a{
+	right: 0;
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	line-height: 50px;
+	margin:  0 5px ;
+}
+.titulo h1{
+	margin: 10px;
+	color:white;
+}
+/*----------------------------------------------------- HTML  ---------------------------------------*/
+
+
+
+.comoEs{
+	padding: 10px;
+	width: 90%;
+	margin: 10px auto;
+	height: 100%;
+	font-family: 'Handlee', cursive;
+}
+.comoEs iframe{
+	width: 100%;
+	height: 500px;
+}
+.comoEs p{
+	font-weight: bold;
+	font-size: 20px;
+}
+.comoEs p a{
+	text-decoration: none;
+}
+/*------------------------------CSS ------------------------*/
+.js,.css,.html{
+	width: 100%;
+	position: relative;
+	top:40px;
+}
+.js h1,.css h1,.html h1{
+	padding: 10px;
+	top:15px;
+	background-color: #30D21F;
+	text-align: center;
+	color:white;
+	font-family: 'Merriweather', serif;
+}
+/*---------------------------JS--------------------------------*/
